@@ -1,0 +1,102 @@
+Microsoft Windows [Version 10.0.19045.4170]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\benja>cd IH-Labs
+
+C:\Users\benja\IH-Labs>git clone https://github.com/BenDueVar/lab-git.git
+Cloning into 'lab-git'...
+remote: Enumerating objects: 50, done.
+remote: Counting objects: 100% (42/42), done.
+remote: Compressing objects: 100% (29/29), done.
+remote: Total 50 (delta 14), reused 37 (delta 13), pack-reused 8
+Receiving objects: 100% (50/50), 12.02 KiB | 683.00 KiB/s, done.
+Resolving deltas: 100% (14/14), done.
+
+C:\Users\benja\IH-Labs>cd lab-git
+
+C:\Users\benja\IH-Labs\lab-git>cd..
+
+C:\Users\benja\IH-Labs>git clone https://github.com/BenDueVar/IRONBEN.git
+Cloning into 'IRONBEN'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+C:\Users\benja\IH-Labs>cd IRONBEN
+
+C:\Users\benja\IH-Labs\IRONBEN>touch about.txt
+'touch' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\benja\IH-Labs\IRONBEN>cat> about.txt
+'cat' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\benja\IH-Labs\IRONBEN>cat > about.txt
+'cat' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\benja\IH-Labs\IRONBEN>cat about.txt
+'cat' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\benja\IH-Labs\IRONBEN>type nul >> about.txt
+
+C:\Users\benja\IH-Labs\IRONBEN>echo design t-shirts >> about.txt
+
+C:\Users\benja\IH-Labs\IRONBEN>type about.txt
+design t-shirts
+
+C:\Users\benja\IH-Labs\IRONBEN>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+C:\Users\benja\IH-Labs\IRONBEN>git add .
+
+C:\Users\benja\IH-Labs\IRONBEN>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.txt
+
+
+C:\Users\benja\IH-Labs\IRONBEN>git commit -m "created about.txt"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'benja@LAPTOP-HBNJRQMO.(none)')
+
+C:\Users\benja\IH-Labs\IRONBEN>git config --global user.email "ben.due.var@gmail.com"
+
+C:\Users\benja\IH-Labs\IRONBEN>git config --global user.name "Benjamin Duenas"
+
+C:\Users\benja\IH-Labs\IRONBEN>git commit -m "created about.txt"
+[main ceea74f] created about.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 about.txt
+
+C:\Users\benja\IH-Labs\IRONBEN>git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 304 bytes | 304.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/BenDueVar/IRONBEN.git
+   a1ba78f..ceea74f  main -> main
+
+C:\Users\benja\IH-Labs\IRONBEN>
